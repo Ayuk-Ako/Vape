@@ -5,7 +5,7 @@ DirectoryIndex index.php
     RewriteEngine On
 
     # Never expose internals
-    RewriteRule ^(app|config|database|storage)(/|$) - [F,L]
+    RewriteRule ^(app|config|database|storage|\.git)(/|$) - [F,L]
 
     # Serve real files/directories directly (assets, uploads, install)
     RewriteCond %{REQUEST_FILENAME} -f [OR]
